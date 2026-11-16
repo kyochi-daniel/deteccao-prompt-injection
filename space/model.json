@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "name": "Prompt Sentinel Acadêmico",
+  "name": "Modelo para detecção de prompt injection",
   "version": "1.0.0",
   "classes": [
     "benigno",

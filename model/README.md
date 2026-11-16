@@ -9,13 +9,13 @@ tags:
   - synthetic-data
   - prompt-injection
 model-index:
-  - name: Prompt Sentinel Acadêmico
+  - name: Modelo para detecção de prompt injection
     results: []
 ---
 
-# Prompt Sentinel Acadêmico
+# Modelo para detecção de prompt injection
 
-[Modelo no Hugging Face](https://huggingface.co/kyochi-daniel/prompt-sentinel-academico) · [Demonstração interativa](https://huggingface.co/spaces/kyochi-daniel/prompt-sentinel-demo) · [Código no GitHub](https://github.com/kyochi-daniel/prompt-sentinel-academico)
+[Modelo no Hugging Face](https://huggingface.co/kyochi-daniel/deteccao-prompt-injection) · [Demonstração interativa](https://huggingface.co/spaces/kyochi-daniel/deteccao-prompt-injection-demo) · [Código no GitHub](https://github.com/kyochi-daniel/deteccao-prompt-injection)
 
 Estudo independente em português brasileiro. Classificador supervisionado **TF-IDF word unigram/bigram + LogisticRegression**; não é um LLM treinado do zero. Modelo pequeno para demonstrar treinamento, separação por famílias, avaliação e inferência no navegador. Não constitui firewall de produção nem fronteira de segurança.
 

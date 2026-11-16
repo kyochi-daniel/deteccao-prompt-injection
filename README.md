@@ -1,6 +1,6 @@
-# Prompt Sentinel Acadêmico
+# Modelo para detecção de prompt injection
 
-[Modelo no Hugging Face](https://huggingface.co/kyochi-daniel/prompt-sentinel-academico) · [Demonstração interativa](https://huggingface.co/spaces/kyochi-daniel/prompt-sentinel-demo) · [Código no GitHub](https://github.com/kyochi-daniel/prompt-sentinel-academico)
+[Modelo no Hugging Face](https://huggingface.co/kyochi-daniel/deteccao-prompt-injection) · [Demonstração interativa](https://huggingface.co/spaces/kyochi-daniel/deteccao-prompt-injection-demo) · [Código no GitHub](https://github.com/kyochi-daniel/deteccao-prompt-injection)
 
 Estudo independente de classificação de tentativas de prompt injection em português brasileiro. Um modelo leve aprende padrões de texto em exemplos sintéticos e compara seu resultado com uma regra de palavras-chave. A demonstração permite inspecionar o escore, as contribuições dos termos e os erros observados.
 

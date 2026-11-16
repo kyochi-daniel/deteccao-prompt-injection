@@ -60,7 +60,7 @@ def train():
     classifier = LogisticRegression(C=4.0, solver="liblinear", max_iter=1000, random_state=42)
     classifier.fit(x, [row["label"] for row in training])
     elapsed = time.perf_counter() - start
-    model = {"schema_version": 1, "name": "Prompt Sentinel Acadêmico", "version": "1.0.0",
+    model = {"schema_version": 1, "name": "Modelo para detecção de prompt injection", "version": "1.0.0",
              "classes": ["benigno", "injecao"], "threshold": THRESHOLD,
              "pipeline": {"normalization": "NFKD_remove_marks_lowercase", "token_pattern": "[a-z0-9_]{2,}",
                           "ngram_range": [1, 2], "sublinear_tf": True, "smooth_idf": True, "norm": "l2"},
