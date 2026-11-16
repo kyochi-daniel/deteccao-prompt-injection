@@ -124,7 +124,7 @@ def train():
             errors = evaluations[name]["model"][kind]
             lines.extend([f"- {error['text']} (escore: {error['probability']:.3f})" for error in errors[:5]] or ["Nenhum neste conjunto sintético."])
             lines.append("")
-    (ROOT / "reports" / "evaluation.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (ROOT / "reports" / "evaluation.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
     print(json.dumps({"samples": metrics["dataset"], "features": len(vectorizer.vocabulary_),
                       "test": evaluations["test"]["model"], "challenge": evaluations["challenge"]["model"]}, ensure_ascii=False, indent=2))
     return model, metrics
